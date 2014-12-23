@@ -1,3 +1,4 @@
+var Question = require("./Question");
 function Fillin(identifer,answer){
   Question.call(this,identifer,answer);
 }
@@ -13,3 +14,5 @@ Fillin.prototype.getscore = function() {
     }
     return score;
   };
+
+  module.exports = Fillin;

@@ -1,3 +1,4 @@
+var Question = require("./Question");
 function ChoiceAnswer(identifer,answer) {
   Question.call(this,identifer,answer);
 }
@@ -21,3 +22,5 @@ ChoiceAnswer.prototype.getscore = function() {
   }
   return score;
 };
+
+module.exports = ChoiceAnswer;

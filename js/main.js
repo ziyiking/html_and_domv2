@@ -1,5 +1,20 @@
+var Fillin = require("./model/fillin");
+var ChoiceAnswer = require("./model/ChoiceAnswer");
+
+$(document).ready(function() {
+  $('#submit').on('click', function() {
+    checkform();
+  });
+});
+
 function checkform(){
 var score = 0;
+
+// $(document).ready(function() {
+//   $('submit').on('click', function() {
+//     checkform();
+//   });
+// });
 
   var fillIn1 = new Fillin("blank1_1","统一建模语言");
   score += fillIn1.getscore();

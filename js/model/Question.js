@@ -6,3 +6,5 @@ function Question(identifer,answer) {
 Question.prototype.getscore = function() {
 
 };
+
+module.exports = Question;
